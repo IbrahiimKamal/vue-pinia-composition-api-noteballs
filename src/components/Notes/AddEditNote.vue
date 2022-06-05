@@ -44,7 +44,7 @@ const props = defineProps({
 });
 
 /* ######## emits ######## */
-const emit = defineEmits("update:modelValue");
+const emit = defineEmits(["update:modelValue"]);
 
 /* ######## focus textarea ######## */
 const textareaRef = ref(null);
