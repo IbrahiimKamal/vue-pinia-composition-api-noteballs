@@ -23,7 +23,7 @@ import { useStoreNotes } from "@/stores/storeNotes";
 const storeNotes = useStoreNotes();
 
 /* ######## notes ######## */
-const newNote = ref("4545");
+const newNote = ref("");
 const addEditNoteRef = ref(null);
 
 // methods
