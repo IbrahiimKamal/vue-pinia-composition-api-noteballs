@@ -26,10 +26,15 @@
       >
         <div class="navbar-end">
           <div class="navbar-item">
-            <RouterLink to="/" class="navbar-item" active-class="is-active"
+            <RouterLink
+              @click="showMobileNav = false"
+              to="/"
+              class="navbar-item"
+              active-class="is-active"
               >Notes</RouterLink
             >
             <RouterLink
+              @click="showMobileNav = false"
               to="/status"
               class="navbar-item"
               active-class="is-active"

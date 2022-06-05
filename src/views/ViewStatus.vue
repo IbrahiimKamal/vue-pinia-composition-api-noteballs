@@ -1,5 +1,29 @@
 <template>
   <div class="status">
-    <h1>Status</h1>
+    <table class="table is-fullwidth">
+      <thead>
+        <tr>
+          <th>State</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Number of Notes</td>
+          <td>{{ storeNotes.totalNotesCount }}</td>
+        </tr>
+
+        <tr>
+          <td>Number of Character (of all notes)</td>
+          <td>{{ storeNotes.totalCharacteresCount }}</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 </template>
+
+<script setup>
+import { useStoreNotes } from "@/stores/storeNotes";
+
+const storeNotes = useStoreNotes();
+</script>
